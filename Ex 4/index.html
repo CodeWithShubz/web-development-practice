@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor website
+    </title>
+    <style>
+        :root{
+            --logo: red;
+            --cta: blue;
+            --search: rgb(0, 5, 5);
+            --nav: pink;
+
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: var(--nav);
+
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .brand {
+            padding: 8px;
+            font-size: large;
+            color: var(--logo);
+    /* width: 30vw; */
+        }
+
+        .action {
+            padding: 5px;
+
+        }
+
+        ul {
+            padding-left: 30px;
+        }
+
+        .btn {
+            border: 2px solid rgb(251, 123, 123);
+            border-radius: 8px;
+            margin: 5px;
+            padding: 2px 30px 2px 2px;
+            color: var(--search);
+        }
+
+        .cta {
+            /* margin-left: 15vw; */
+            padding: 5px;
+            text-align: left;
+            color: var(--cta);
+                /* width: 70vw; */
+
+        }
+        .cta-block{
+            margin-left: auto;
+        }
+        .btn:hover{
+            cursor: alias;
+            background: var(--logo);
+            color: var(--nav);
+        }
+        li:hover{
+            color: var(--logo);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li class="brand">CodeWithShubham</li>
+            <div class="cta-block">
+                <ul class="cta">
+                    <li class="action">Home</li>
+                    <li class="action">About</li>
+                    <li class="action">Contact</li>
+                </ul>
+            </div>
+            <li class="btn">Search</li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
